@@ -6,7 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/payroz_models.dart';
 
 class PayRozProvider with ChangeNotifier {
-  final String apiBase = 'http://localhost:5000/api'; // Use 10.0.2.2 for Android Emulator, localhost for iOS/web/testing
+  final String apiBase = 'https://payroz-project-427839361332.asia-south1.run.app/api';
   
   String? _token;
   User? _currentUser;
