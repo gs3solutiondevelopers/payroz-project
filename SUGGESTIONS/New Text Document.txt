@@ -1,0 +1,244 @@
+PROJECT NAME: PAYROZ B2C APP
+
+PAYROZ will be a pure B2C customer app only. No B2B, no retailer, no distributor, no AEPS, no agent system.
+
+MAIN REQUIREMENT:
+Build a top-level India fintech B2C app like Amazon Pay / PhonePe style, but unique PAYROZ design.
+
+WALLET RULE:
+1. No Add Money Wallet
+2. No user wallet top-up
+3. Only Rewards Wallet
+4. Rewards Wallet balance will include:
+   - Cashback
+   - Referral Income
+   - Failed Transaction Refund
+   - Admin Promotional Bonus
+5. User can use Rewards Wallet balance for eligible services.
+6. Direct payment gateway payment for all services.
+
+CUSTOMER APP FEATURES:
+1. OTP Login
+2. User Profile
+3. KYC optional / required as per service
+4. Home Dashboard
+5. Search Service Bar
+6. AI Support button at top beside Notification
+7. Push Notification
+8. Transaction History
+9. Complaint / Ticket System
+10. Cashback Wallet
+11. Referral System
+12. Offers Section
+13. Smart Reminders
+14. Multi-language: English, Hindi, Bengali
+15. Account Section
+16. Help & Support
+17. App Rating / Feedback
+
+HOME SCREEN FINAL UI:
+Top:
+- PAYROZ Logo + Name
+- AI Support icon
+- Notification icon
+
+No 3-line menu.
+
+Bottom Navigation:
+- Home
+- Transactions
+- Refer & Earn
+- Rewards
+- Account
+
+CUSTOMER SERVICES:
+Recharge Zone:
+- Mobile Recharge
+- DTH Recharge
+- Google Play Recharge
+- FASTag Recharge
+- Data Card Recharge
+
+BBPS Zone:
+- Electricity Bill
+- Gas Bill
+- Water Bill
+- Broadband Bill
+- Landline Bill
+- LPG Booking
+- Municipal Tax
+- Education Fees
+- Society Maintenance
+- Credit Card Bill
+- Loan EMI Payment
+
+Insurance Zone:
+- Bike Insurance
+- Car Insurance
+- Health Insurance
+- Travel Insurance
+- Personal Accident Insurance
+
+Rewards Zone:
+- Cashback Wallet
+- Refer & Earn
+- Reward Points
+- Offers
+- Scratch Card System optional
+
+Future B2C Services:
+- Bus Booking
+- Train Booking
+- Flight Booking
+- Hotel Booking
+- OTT Recharge
+- Gift Card
+- Digital Gold
+- Shopping Gift Voucher
+
+SMART AUTOMATION FEATURES:
+1. Auto Recharge Reminder
+2. Auto Bill Due Reminder
+3. Auto Insurance Renewal Reminder
+4. Auto Failed Transaction Check
+5. Auto Refund to Rewards Wallet
+6. Auto Cashback Credit
+7. Auto Referral Income Credit
+8. Auto Push Notification
+9. Auto WhatsApp/SMS/Email Alert optional
+10. Auto Complaint Ticket Creation
+11. Auto Staff Assignment
+12. Auto Offer Recommendation
+
+ADMIN PANEL FEATURES:
+1. Admin Dashboard
+2. Total Users
+3. Active Users
+4. Total Transactions
+5. Success / Failed / Pending Transactions
+6. Service-wise Report
+7. Date-wise Report
+8. User-wise Report
+9. Cashback Report
+10. Referral Report
+11. Refund Report
+12. Complaint Report
+13. Revenue Report
+
+SERVICE MANAGEMENT:
+1. Add New Service
+2. Edit Service
+3. Enable/Disable Service
+4. Add Service Category
+5. Edit Service Category
+6. Service Icon Upload
+7. Service Sorting
+8. Service Commission Setup
+9. Service Cashback Setup
+10. Service Maintenance Mode
+11. API Provider Mapping
+12. Backup API Provider Option
+
+CASHBACK MANAGEMENT:
+1. Service-wise Cashback
+2. Amount-wise Cashback
+3. User-wise Cashback
+4. Campaign Cashback
+5. Coupon Code Cashback
+6. Auto Cashback Credit
+7. Cashback Expiry optional
+
+REFERRAL MANAGEMENT:
+1. Referral Code Generate
+2. Referral Link Share
+3. Level 1 Referral Income
+4. Admin Can Set Referral Amount
+5. Auto Referral Credit
+6. Referral Report
+7. Block Fake Referral
+
+TRANSACTION SYSTEM:
+1. Direct Payment Gateway Payment
+2. Payment Gateway Integration
+3. Service API Integration
+4. Pending Transaction Check
+5. Failed Transaction Refund
+6. Success Receipt
+7. Download Invoice
+8. Share Receipt
+9. Transaction Status Check
+10. Operator Reference ID Save
+
+COMPLAINT SYSTEM:
+1. Auto Complaint Ticket
+2. Manual Complaint Ticket
+3. Ticket Number Generate
+4. Staff Assign
+5. User Reply
+6. Admin Reply
+7. Ticket Status: Open / Processing / Resolved / Closed
+8. Complaint History
+
+STAFF PANEL:
+1. Add Staff
+2. Staff Login
+3. Role Permission
+4. Support Staff
+5. Complaint Staff
+6. Refund Staff
+7. KYC Staff
+8. Marketing Staff
+9. Accounts Staff
+10. Staff Activity Log
+11. Staff Login History
+12. Staff-wise Work Report
+
+NOTIFICATION SYSTEM:
+1. Push Notification
+2. User-wise Notification
+3. All-user Notification
+4. Service-wise Notification
+5. Offer Notification
+6. Bill Reminder Notification
+7. Insurance Reminder Notification
+8. Failed/Refund Notification
+9. Cashback Notification
+10. Referral Notification
+
+AI SUPPORT:
+1. AI Chat Support
+2. FAQ Auto Reply
+3. Recharge Help
+4. Refund Help
+5. Complaint Help
+6. Ticket Create from AI Chat
+7. Human Staff Transfer Option
+
+SECURITY FEATURES:
+1. OTP Login
+2. Device ID Tracking
+3. Login History
+4. Block Suspicious User
+5. Payment Security
+6. API Key Security
+7. Admin 2FA
+8. Role-based Access
+9. Data Backup
+10. Error Log System
+
+TECHNICAL REQUIREMENT:
+1. Android App
+2. iOS Ready Structure
+3. Admin Web Panel
+4. Staff Web Panel
+5. REST API Backend
+6. Dynamic Service Management
+7. Dynamic Banner Management
+8. Dynamic Offer Management
+9. Dynamic Cashback Rule
+10. Dynamic Notification
+11. No hardcoded services
+12. New B2C service can be added from Admin Panel without app update
+
+IMPORTANT:
+PAYROZ must be future-ready. Any new B2C service should be added from Admin Panel only. App design should be premium, clean, light mode only, no dark mode, no B2B, no retailer/distributor system.
