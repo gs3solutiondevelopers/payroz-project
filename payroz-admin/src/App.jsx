@@ -23,7 +23,8 @@ import {
   Lock
 } from 'lucide-react';
 
-const API_BASE = 'http://localhost:5000/api';
+// Use localhost for local development, and Cloud Run URL for production build
+const API_BASE = import.meta.env.DEV ? 'http://localhost:5000/api' : 'https://payroz-project-427839361332.asia-south1.run.app/api';
 
 export default function App() {
   const [token, setToken] = useState(localStorage.getItem('admin_token') || '');
