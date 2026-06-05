@@ -30,8 +30,8 @@ app.get('/', (req, res) => {
 // Sync Database and Start Server
 async function startServer() {
   try {
-    // Seed database on start
-    await seedDatabase();
+    // Seed database on start (DISABLED FOR PRODUCTION)
+    // await seedDatabase();
 
     app.listen(PORT, () => {
       console.log(`=========================================`);
