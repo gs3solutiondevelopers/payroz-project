@@ -340,3 +340,26 @@ tr:hover td {
   justify-content: flex-end;
   gap: 0.75rem;
 }
+
+/* Custom Scrollbar for Sidebar */
+aside nav::-webkit-scrollbar {
+  width: 6px;
+}
+aside nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+aside nav::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+aside nav::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Sidebar Buttons Fix */
+aside nav .btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  white-space: nowrap;
+  justify-content: flex-start !important;
+}

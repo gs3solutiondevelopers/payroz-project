@@ -200,6 +200,10 @@ export default function App() {
       const res = await fetch(`${API_BASE}/admin/stats`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
+      if (res.status === 401 || res.status === 403) {
+        handleLogout();
+        return;
+      }
       const data = await res.json();
       if (res.ok) {
         setStats(data.stats);
@@ -677,10 +681,17 @@ export default function App() {
           
           <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
             <div style={{
-              display: 'inline-flex', width: '60px', height: '60px', borderRadius: '14px',
-              backgroundColor: '#0B192C', color: '#FF6B00', alignItems: 'center', justifyContent: 'center',
-              fontSize: '2rem', fontWeight: '800', border: '2px solid #FF6B00', marginBottom: '1rem'
-            }}>P</div>
+              width: '80px', height: '80px', borderRadius: '16px',
+              backgroundColor: '#FFFFFF', padding: '8px',
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+              marginBottom: '1rem', boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
+            }}>
+              <img 
+                src="/logo.png" 
+                alt="Payroz Logo" 
+                style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+              />
+            </div>
             <h1 style={{ fontSize: '1.75rem', fontWeight: '800', color: '#0B192C' }}>PAYROZ</h1>
             <p style={{ fontSize: '0.875rem', color: '#64748B', marginTop: '0.25rem' }}>Administration Web Portal</p>
           </div>
@@ -790,11 +801,16 @@ export default function App() {
           borderBottom: '1px solid #1E293B'
         }}>
           <div style={{
-            width: '38px', height: '38px', borderRadius: '8px',
-            backgroundColor: '#FFFFFF', color: 'var(--accent-color)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontWeight: '800', fontSize: '1.25rem', border: '1.5px solid var(--accent-color)'
-          }}>P</div>
+            width: '40px', height: '40px', borderRadius: '8px',
+            backgroundColor: '#FFFFFF', padding: '4px',
+            display: 'flex', alignItems: 'center', justifyContent: 'center'
+          }}>
+            <img 
+              src="/logo.png" 
+              alt="Payroz Logo" 
+              style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+            />
+          </div>
           <div>
             <h2 style={{ fontSize: '1.15rem', fontWeight: '800', letterSpacing: '0.05em' }}>PAYROZ</h2>
             <span style={{ fontSize: '0.75rem', color: 'var(--accent-color)', fontWeight: '600' }}>
@@ -803,7 +819,7 @@ export default function App() {
           </div>
         </div>
 
-        <nav style={{ flex: 1, padding: '1.5rem 1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+        <nav style={{ flex: 1, padding: '1.5rem 1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', overflowY: 'auto' }}>
           
           {/* Dashboard is visible to all roles */}
           <button 

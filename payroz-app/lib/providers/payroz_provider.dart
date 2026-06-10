@@ -6,7 +6,10 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/payroz_models.dart';
 
 class PayRozProvider with ChangeNotifier {
-  final String apiBase = 'https://payroz-project-427839361332.asia-south1.run.app/api';
+  // Automatically switch: Cloud Run for Production, Localhost for Development
+  final String apiBase = kReleaseMode 
+      ? 'https://payroz-project-427839361332.asia-south1.run.app/api'
+      : 'http://localhost:5000/api';
   
   String? _token;
   User? _currentUser;
